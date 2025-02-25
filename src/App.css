@@ -1,0 +1,76 @@
+/* src/App.css */
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: rgb(160, 105, 3);
+  
+  image-rendering: pixelated;
+}
+
+h3 {
+  text-align: center;
+}
+div > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.camera{
+  position: relative;
+}
+.camera:before{
+  background: url(/public/player-top.png) center no-repeat; 
+  background-size: 50%;
+  position: absolute;
+  content: '';
+  display: block;
+  width: 64px;
+  height: 64px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+}
+.camera.left:before{
+  background-image: url(/public/player-left.png);
+}
+.camera.top:before{
+  background-image: url(/public/player-top.png);
+}
+.camera.down:before{
+  background-image: url(/public/player-down.png);
+}
+.camera.right:before{
+  background-image: url(/public/player-right.png);
+}
+.map{
+  /* background: url(/public/water.gif); */
+  /* background: blue; */
+  /* background: black; */
+  background:url(/public/ground-sand.png);
+  background-size: 100vh;
+  /* background: rgb(112, 86, 0); */
+}
+.water{
+  background: black;
+  background: url(/public/water.gif);
+  background-size: contain;
+  /* background: url(/public/trees.png) center; */
+  /* opacity: .6 !important; */
+}
+.ground{
+  background:url(/public/ground-sand.png);
+  background-size: 100%;
+  background-position: center;
+  opacity: .97 !important;
+}
+.tree{
+  background: rgb(3, 84, 41);
+  background: url(/public/tree.png);
+  /* background:url(/public/ground.png); */
+}
