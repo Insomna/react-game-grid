@@ -1,7 +1,8 @@
 {
   "name": "game-grid",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "https://insomna.github.io/react-game-grid/",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
