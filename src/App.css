@@ -9,6 +9,7 @@ body {
   background: rgb(160, 105, 3);
   
   image-rendering: pixelated;
+  color: #000;
 }
 
 h3 {
